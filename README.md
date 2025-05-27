@@ -11,29 +11,22 @@ This project is a React.js web application that displays live environmental data
 ✅ Fully responsive, mobile-friendly UI with Tailwind CSS and slick carousel
 
 🏗️ Project Architecture
-┌──────────────────────────────┐
-│      React Frontend App      │
-│ ──────────────────────────── │
-│ - Displays live metrics      │
-│ - Shows charts & forecast    │
-│ - Generates alerts           │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│       Backend API Server      │
-│ (Node.js / Express / Flask)   │
-│ - Provides /api/env data      │
-│ - Connects to IoT sensors     │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│    IoT Sensor Devices        │
-│ (ESP32, DHT11, BMP280, MQ135 │
-│ - Collect real-time data     │
-│ - Send to backend via Wi-Fi  │
-└──────────────────────────────┘
+
+
+```
+Project Architecture
+├── React Frontend App
+│   ├── Displays live metrics
+│   ├── Shows charts & forecast
+│   └── Generates alerts
+├── Backend API Server (Node.js / Express / Flask)
+│   ├── Provides /api/env data
+│   └── Connects to IoT sensors
+└── IoT Sensor Devices (ESP32, DHT11, BMP280, MQ135)
+    ├── Collect real-time data
+    └── Send to backend via Wi-Fi
+```
+
 
 🛠️ Tech Stack
 Frontend: React.js, Tailwind CSS, Recharts, slick-carousel, CountUp.js
