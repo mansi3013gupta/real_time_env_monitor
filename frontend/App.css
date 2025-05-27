@@ -1,0 +1,39 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-dots li button:before {
+  color: gray;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4f46e5; /* Indigo */
+}
+
+.forecast-table, .forecast-table th, .forecast-table td {
+  border: 2px solid #666 !important;
+}
+
